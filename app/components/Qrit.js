@@ -1,3 +1,6 @@
+'use client';
+import Plats from "@/app/components/items/Items";
+
 const Qrit = () => {
     return (
         <div className="w-full relative bg-white h-[1000px] overflow-y-auto text-left text-lg text-black font-inter">
@@ -22,19 +25,7 @@ const Qrit = () => {
                 <b className="relative">Sandwich</b>
             </div>
             <div className="absolute top-[282px] rounded-[10px] bg-white w-[397px] overflow-x-auto flex flex-row items-start justify-start py-[11px] pl-[10px] box-border gap-[21px] ml-4">
-                <div className="w-[152px] relative rounded-lg bg-white shadow-[0px_52px_14px_rgba(0,_0,_0,_0),_0px_33px_13px_rgba(0,_0,_0,_0.01),_0px_19px_11px_rgba(0,_0,_0,_0.02),_0px_8px_8px_rgba(0,_0,_0,_0.03),_0px_2px_5px_rgba(0,_0,_0,_0.04),_0px_0px_0px_rgba(0,_0,_0,_0.04)] h-[220px] overflow-hidden shrink-0 text-xl">
-                    <img
-                        className="absolute top-[0.2px] left-[0.3px] w-[151.7px] h-[132px] object-cover"
-                        alt=""
-                        src="/img1.png"
-                    />
-                    <div className="absolute top-[142.9px] left-[19.9px] font-semibold">
-                        Mo:mo
-                    </div>
-                    <div className="absolute top-[174.9px] left-[19.9px] text-lg font-medium text-gray-700">
-                        Rs. 250
-                    </div>
-                </div>
+                <Plats />
                 <div className="w-[152px] relative rounded-lg bg-white shadow-[0px_52px_14px_rgba(0,_0,_0,_0),_0px_33px_13px_rgba(0,_0,_0,_0.01),_0px_19px_11px_rgba(0,_0,_0,_0.02),_0px_8px_8px_rgba(0,_0,_0,_0.03),_0px_2px_5px_rgba(0,_0,_0,_0.04),_0px_0px_0px_rgba(0,_0,_0,_0.04)] h-[220px] overflow-hidden shrink-0">
                     <img
                         className="absolute top-[0.2px] left-[0.3px] w-[151.7px] h-[132px] object-cover"
