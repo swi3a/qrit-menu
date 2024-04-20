@@ -12,26 +12,28 @@ const Plats = () => {
     }, []);
 
     return (
-        <div className="w-[152px] relative rounded-lg bg-white shadow-[0px_52px_14px_rgba(0,_0,_0,_0),_0px_33px_13px_rgba(0,_0,_0,_0.01),_0px_19px_11px_rgba(0,_0,_0,_0.02),_0px_8px_8px_rgba(0,_0,_0,_0.03),_0px_2px_5px_rgba(0,_0,_0,_0.04),_0px_0px_0px_rgba(0,_0,_0,_0.04)] h-[220px] overflow-hidden shrink-0 text-xl">
-            <Image
-                className="absolute top-[0.2px] left-[0.3px] w-[151.7px] h-[132px] object-cover"
-                alt=""
-                src="/img1.png"
-                width={152}
-                height={132}
-            />
+        <React.Fragment>
             {data && data.map((item, index) => (
-                <React.Fragment key={index}>
-                    <div className="absolute top-[142.9px] left-[19.9px] font-semibold">
+                <div  key={index} className="w-[160px] relative rounded-lg bg-red-100 shadow-[0px_52px_14px_rgba(0,_0,_0,_0),_0px_33px_13px_rgba(0,_0,_0,_0.01),_0px_2px_5px_rgba(0,_0,_0,_0.04),_0px_0px_0px_rgba(0,_0,_0,_0.04)] h-[240px] overflow-hidden shrink-0 text-xl">
+                    <Image
+                        className="absolute top-[0.2px] left-[0.3px] w-[160.7px] h-[132px] object-cover"
+                        alt=""
+                        src="/img1.png"
+                        width={160}
+                        height={132}
+                    />
+
+                    <div className="absolute justify-center top-[150px] pl-1 pr-1 items-center text-center font-normal text-lg">
                         {item.name}
                     </div>
-                    <div className="absolute top-[174.9px] left-[19.9px] text-lg font-medium text-gray-700">
-
+                    <div className="absolute top-[210px] left-[33px] text-lg font-medium text-gray-700">
+                        {item['prix']} MAD
                     </div>
-                </React.Fragment>
+
+                </div>
             ))}
-        </div>
-    );
+        </React.Fragment>
+    )
 };
 
 export default Plats;
