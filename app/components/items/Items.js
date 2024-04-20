@@ -23,9 +23,9 @@ const Plats = () => {
                         height={132}
                     />
 
-                    <div className="absolute justify-center top-[150px] pl-1 pr-1 items-center text-center font-normal text-lg">
-                        {item.name}
-                    </div>
+                    <h3 className="absolute justify-center top-[150px] pl-5 pr-1  font-normal text-lg">
+                        {item['name']}
+                    </h3>
                     <div className="absolute top-[210px] left-[33px] text-lg font-medium text-gray-700">
                         {item['prix']} MAD
                     </div>
