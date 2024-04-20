@@ -1,5 +1,7 @@
 'use client';
 import Plats from "@/app/components/items/Items";
+import Popup from "@/app/components/items/Popup";
+
 
 const Qrit = () => {
     return (
@@ -13,13 +15,7 @@ const Qrit = () => {
                     Pas sûr de votre choix ? Votre compagnon IA est là !
                 </b>
             </div>
-            <div className="absolute top-[174px] left-[38px] w-[321px] h-[43px] text-base text-gray-600">
-                <div
-                    className="absolute top-[0px] left-[0px] rounded-mini shadow-[0px_0px_2px_rgba(0,_0,_0,_0.25)] box-border w-[321px] h-[43px] border-[0.5px] border-solid border-gray-500"/>
-                <div className="absolute top-[12px] left-[13.8px] font-medium inline-block w-[261px] h-[15px]">
-                    Search for Food
-                </div>
-            </div>
+            <Popup />
             <div
                 className="absolute top-[246px] left-[47px] flex flex-row items-center justify-start text-7xl text-darkslategray font-poppins">
                 <b className="relative">Sandwich</b>
