@@ -1,31 +1,39 @@
-import { useEffect, useState } from 'react';
+import React, {useState, useEffect} from 'react';
 
-function Categories() {
-    const [data, setData] = useState(null);
+// eslint-disable-next-line react-hooks/rules-of-hooks
 
+const Categories = () => {
+    const [data, fetchData] = useState(null);
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch('https://qrit.b-wise.ma/qrit-menu/catg.php?id=1');
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const jsonData = await response.json();
-                setData(jsonData);
-            } catch (error) {
-                console.error('There was a problem with your fetch operation:', error);
-            }
-        };
-
-        fetchData().then(r => console.log('Data fetched!'));
-    }, []); // Empty dependency array means this effect runs once on mount
-
+        fetch('https://qrit.b-wise.ma/qrit-menu/plats.php')
+            .then(response => response.json())
+            .then(data => fetchData(data))
+            .catch(error => console.error(error));
+    }, []);
     return (
-
-    <div>
-        <h1>{data.name}</h1>
-    </div>
-    );
+        <React.Fragment>
+            {data && data.map((item, index) => (
+                (item['id'] === '1') &&
+                <div key={index}
+                     className="absolute top-[246px] left-[47px] flex flex-row items-center justify-start text-7xl text-darkslategray font-poppins">
+                    <b className="relative">{item['name']}</b>
+                </div>
+            ))}
+            {data && data.map((item, index) => (
+                (item['id'] === '2') &&
+                <div key={index}
+                    className="absolute top-[536px] left-[47px] flex flex-row items-center justify-start text-7xl text-darkslategray font-poppins">
+                    <b className="relative">{item['name']}</b>
+                </div>
+            ))}
+            {data && data.map((item, index) => (
+                (item['id'] === '3') &&
+                <div key={index}
+                    className="absolute top-[826px] left-[47px] flex flex-row items-center justify-start text-7xl text-darkslategray font-poppins">
+                    <b className="relative">{item['name']}</b>
+                </div>
+            ))}
+        </React.Fragment>
+    )
 }
-
 export default Categories;
