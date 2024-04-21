@@ -52,7 +52,7 @@ const Plats1 = () => {
                 (item['idcat'] === '2') &&
                 <div  key={index} className="w-[160px] relative rounded-lg bg-red-50 shadow-[0px_52px_14px_rgba(0,_0,_0,_0),_0px_33px_13px_rgba(0,_0,_0,_0.01),_0px_2px_5px_rgba(0,_0,_0,_0.04),_0px_0px_0px_rgba(0,_0,_0,_0.04)] h-[240px] overflow-hidden shrink-0 text-xl">
                     <Image
-                        className="absolute top-[0.2px] left-[0.3px] w-[151.7px] h-[132px] object-cover"
+                        className="absolute top-[0.2px] left-[0.3px] w-[160.7px] h-[132px] object-cover"
                         alt=""
                         src="/img2.png"
                         width={160}
@@ -84,7 +84,7 @@ const Plats2 = () => {
                 (item['idcat'] === '3') &&
                 <div  key={index} className="w-[160px] relative rounded-lg bg-red-200 shadow-[0px_52px_14px_rgba(0,_0,_0,_0),_0px_33px_13px_rgba(0,_0,_0,_0.01),_0px_2px_5px_rgba(0,_0,_0,_0.04),_0px_0px_0px_rgba(0,_0,_0,_0.04)] h-[240px] overflow-hidden shrink-0 text-xl">
                     <Image
-                        className="absolute top-[0.2px] left-[0.3px] w-[151.7px] h-[132px] object-cover"
+                        className="absolute top-[0.2px] left-[0.3px] w-[160.7px] h-[132px] object-cover"
                         alt=""
                         src="/img2.png"
                         width={160}

@@ -15,21 +15,21 @@ const Categories = () => {
             {data && data.map((item, index) => (
                 (item['id'] === '1') &&
                 <div key={index}
-                     className="absolute top-[246px] left-[47px] flex flex-row items-center justify-start text-7xl text-darkslategray font-poppins">
+                     className="absolute top-[255px] left-[47px] flex flex-row items-center justify-start text-7xl text-darkslategray font-poppins">
                     <b className="relative">{item['name']}</b>
                 </div>
             ))}
             {data && data.map((item, index) => (
                 (item['id'] === '2') &&
                 <div key={index}
-                    className="absolute top-[536px] left-[47px] flex flex-row items-center justify-start text-7xl text-darkslategray font-poppins">
+                    className="absolute top-[545px] left-[47px] flex flex-row items-center justify-start text-7xl text-darkslategray font-poppins">
                     <b className="relative">{item['name']}</b>
                 </div>
             ))}
             {data && data.map((item, index) => (
                 (item['id'] === '3') &&
                 <div key={index}
-                    className="absolute top-[826px] left-[47px] flex flex-row items-center justify-start text-7xl text-darkslategray font-poppins">
+                    className="absolute top-[835px] left-[47px] flex flex-row items-center justify-start text-7xl text-darkslategray font-poppins">
                     <b className="relative">{item['name']}</b>
                 </div>
             ))}
