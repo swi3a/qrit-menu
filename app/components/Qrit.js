@@ -2,6 +2,8 @@
 import Plats, {Plats1, Plats2} from "@/app/components/items/Items";
 import Popup from "@/app/components/items/Popup";
 import Categories from "@/app/components/items/Categories";
+import React from "react";
+import "@/app/components/items/Popup.css";
 
 
 const Qrit = () => {
