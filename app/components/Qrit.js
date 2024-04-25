@@ -1,16 +1,15 @@
 'use client';
-import Plats, {Plats1, Plats2} from "@/app/components/items/Items";
-import Popup from "@/app/components/items/Popup";
-import Categories from "@/app/components/items/Categories";
+import Plats, {Plats1, Plats2} from "./Items";
+import Popup from "./Popup";
+import Categories from "./Categories";
 import React from "react";
-import "@/app/components/items/Popup.css";
+import "./Popup.css";
 
 
 const Qrit = () => {
     return (
         <div className="w-full relative bg-white h-[1000px] overflow-y-auto text-left text-lg text-black font-inter">
-            <div
-                className="absolute top-[46px] left-[calc(50%_-_157px)] w-[313px] h-[85px] text-center text-mid text-gray-300 font-droid-sans">
+            <div className="absolute top-[46px] left-[calc(50%_-_157px)] w-[313px] h-[85px] text-center text-mid text-gray-300 font-droid-sans">
                 <div className="absolute top-[54px] left-[calc(50%_-_156.5px)] inline-block w-[313px] h-[31px]">
                     Explorez des saveurs qui vous raviront.
                 </div>
