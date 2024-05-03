@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Popup.css';
 import ChatBot from "./chat/ChatBot";
 import './chat/ChatBot.css'
+import ChatWindow from "./chat/Chatpopup";
 
 function Popup() {
     const [showPopup, setShowPopup] = useState(false);
@@ -27,7 +28,7 @@ function Popup() {
                     <div className="popup-background">
                         <div className="popup-content">
                             <button onClick={togglePopup}>X</button>
-                            <ChatBot />
+                            <ChatWindow />
                         </div>
                     </div>
                 </div>
